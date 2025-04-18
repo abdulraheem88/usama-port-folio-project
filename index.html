@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 24.8.4.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="00:00:00"/>
-	<style type="text/css">
-		@page { size: 8.27in 11.69in; margin: 0.79in }
-		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
-		pre { font-family: "Liberation Mono", monospace; font-size: 10pt; background: transparent }
-	</style>
-</head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
-  &lt;title&gt;Usama | SEO Portfolio&lt;/title&gt;
-  &lt;style&gt;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Usama | SEO Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
     :root {
-      --black: #000;
+      --black: #0e0e0e;
       --orange: #ff6f00;
       --skyblue: #00bcd4;
       --seagreen: #2e8b57;
       --red: #e53935;
       --white: #fff;
-      --gray: #333;
+      --gray: #1e1e1e;
+      --light-gray: #2f2f2f;
     }
 
     * {
@@ -37,29 +25,28 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: var(--black);
       color: var(--white);
+      line-height: 1.6;
     }
 
     header {
       position: sticky;
       top: 0;
       background: var(--black);
-      padding: 1rem 2rem;
+      padding: 1.2rem 2rem;
       z-index: 1000;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      transition: background 0.3s ease;
-      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
     }
 
     .logo {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: bold;
       color: var(--orange);
-      letter-spacing: 1px;
       transition: color 0.3s ease;
     }
 
@@ -70,7 +57,7 @@
     nav ul {
       list-style: none;
       display: flex;
-      gap: 25px;
+      gap: 30px;
     }
 
     nav a {
@@ -112,48 +99,81 @@
       height: 3px;
       background: var(--white);
       margin: 4px 0;
-      transition: 0.3s;
     }
 
     section {
-      padding: 80px 20px;
+      padding: 100px 30px;
       background-color: var(--gray);
-      border-bottom: 1px solid var(--black);
     }
 
     section h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       color: var(--orange);
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      max-width: 1000px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
       margin: auto;
     }
 
-    .card {
+    .card, .info-box {
       background: var(--seagreen);
-      padding: 25px;
+      padding: 30px;
       border-radius: 12px;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 16px rgba(0, 255, 128, 0.2);
+    .card:hover, .info-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0, 255, 128, 0.3);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    #home .grid div p:first-child {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    #home .grid div p:last-child {
+      color: #ddd;
+      font-style: italic;
+    }
+
+    #about ul {
+      text-align: left;
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .info-box p, .info-box ul li {
+      margin-bottom: 8px;
+    }
+
+    .contact-form {
+      background-color: var(--light-gray);
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
 
     .contact-form input,
     .contact-form textarea {
       width: 100%;
-      padding: 12px;
-      margin-top: 10px;
+      padding: 14px;
+      margin-top: 15px;
       border: none;
       border-radius: 8px;
       background-color: #f2f2f2;
@@ -162,11 +182,11 @@
     }
 
     .contact-form button {
-      margin-top: 12px;
+      margin-top: 20px;
       background: var(--red);
       color: var(--white);
       border: none;
-      padding: 12px 25px;
+      padding: 14px 30px;
       border-radius: 8px;
       font-size: 1rem;
       cursor: pointer;
@@ -185,16 +205,15 @@
       font-weight: bold;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
       nav ul {
         display: none;
         flex-direction: column;
         background: var(--black);
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: 20px;
-        width: 200px;
+        width: 220px;
         border-radius: 8px;
         padding: 1rem;
       }
@@ -207,101 +226,100 @@
         display: flex;
       }
     }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
+  </style>
+</head>
+<body>
 
-&lt;header&gt;
-  &lt;div class=&quot;logo&quot;&gt;Usama&lt;/div&gt;
-  &lt;div class=&quot;menu-toggle&quot; onclick=&quot;toggleMenu()&quot;&gt;
-    &lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;nav&gt;
-    &lt;ul id=&quot;navbar&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#services&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/nav&gt;
-&lt;/header&gt;
+<header>
+  <div class="logo">Usama</div>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav>
+    <ul id="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-&lt;section id=&quot;home&quot;&gt;
-  &lt;h2&gt;Home&lt;/h2&gt;
-  &lt;div class=&quot;grid&quot;&gt;
-    &lt;div&gt;
-      &lt;p&gt;Hello, I am Usama, SEO Intern.&lt;/p&gt;
-      &lt;p&gt;Completed SEO training covering On-Page, Off-Page, and Technical SEO.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;p&gt;SEO improves your site’s visibility and brings more traffic by enhancing search engine rankings.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
+<section id="home">
+  <h2>Home</h2>
+  <div class="grid">
+    <div>
+      <p>Hello, I am Usama, a passionate and motivated SEO Intern.</p>
+      <p>I have successfully completed extensive training in On-Page SEO, Off-Page SEO, and Technical SEO practices, helping businesses grow their visibility and reach.</p>
+    </div>
+    <div>
+      <p>SEO is the heart of online visibility. With well-planned strategies, your site can rank higher, attract more visitors, and convert them into loyal customers.</p>
+    </div>
+  </div>
+</section>
 
-&lt;section id=&quot;about&quot;&gt;
-  &lt;h2&gt;About&lt;/h2&gt;
-  &lt;div class=&quot;grid&quot;&gt;
-    &lt;div&gt;
-      &lt;p&gt;Name: Usama&lt;/p&gt;
-      &lt;p&gt;Father Name: Muhammad Aslam&lt;/p&gt;
-      &lt;p&gt;SEO Intern working with multiple industry tools.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;p&gt;Familiar Tools:&lt;/p&gt;
-      &lt;ul&gt;
-        &lt;li&gt;SEMRush&lt;/li&gt;
-        &lt;li&gt;Ubersuggest&lt;/li&gt;
-        &lt;li&gt;Grammarly&lt;/li&gt;
-        &lt;li&gt;Google Search Console&lt;/li&gt;
-        &lt;li&gt;GTMetrix&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
+<section id="about">
+  <h2>About</h2>
+  <div class="grid">
+    <div class="info-box">
+      <p><strong>Name:</strong> Usama</p>
+      <p><strong>Father Name:</strong> Muhammad Aslam</p>
+      <p><strong>Role:</strong> SEO Intern working with multiple industry-leading tools to optimize and analyze website performance.</p>
+    </div>
+    <div class="info-box">
+      <p><strong>Familiar Tools:</strong></p>
+      <ul>
+        <li>SEMRush</li>
+        <li>Ubersuggest</li>
+        <li>Grammarly</li>
+        <li>Google Search Console</li>
+        <li>GTMetrix</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-&lt;section id=&quot;services&quot;&gt;
-  &lt;h2&gt;Services&lt;/h2&gt;
-  &lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;card&quot;&gt;
-      &lt;h3&gt;On-Page SEO&lt;/h3&gt;
-      &lt;p&gt;Content and HTML optimization for better indexing.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;card&quot;&gt;
-      &lt;h3&gt;Off-Page SEO&lt;/h3&gt;
-      &lt;p&gt;Improve rankings through backlinking and outreach.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;card&quot;&gt;
-      &lt;h3&gt;Technical SEO&lt;/h3&gt;
-      &lt;p&gt;Enhance website infrastructure and speed.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
+<section id="services">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🔧 On-Page SEO</h3>
+        <p>Improve website content, headings, and images so search engines can understand your site better. Works great with WordPress too!</p>
+      </div>
+      <div class="card">
+        <h3>🌐 Off-Page SEO</h3>
+        <p>Increase your site’s trust and ranking by getting links from other websites. Includes sharing content and getting mentions.</p>
+      </div>
+      <div class="card">
+        <h3>⚙️ Technical SEO</h3>
+        <p>Make sure your website loads fast, works well on mobile, and is easy for search engines to visit. Also applies to WordPress websites.</p>
+      </div>
+    </div>
+  </section>
+  
 
-&lt;section id=&quot;contact&quot;&gt;
-  &lt;h2&gt;Contact&lt;/h2&gt;
-  &lt;form class=&quot;contact-form&quot;&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Full Name&quot; required /&gt;
-    &lt;input type=&quot;email&quot; placeholder=&quot;Email&quot; required /&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Mobile Number&quot; required /&gt;
-    &lt;textarea placeholder=&quot;Message&quot; rows=&quot;4&quot; required&gt;&lt;/textarea&gt;
-    &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
-  &lt;/form&gt;
-&lt;/section&gt;
+<section id="contact">
+  <h2>Contact</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email Address" required />
+    <input type="text" placeholder="Mobile Number" required />
+    <textarea placeholder="Write your message..." rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
-&lt;footer&gt;
-  &lt;p&gt;Made by Usama | Email: u36186955@gmail.com | Phone: 03234407277&lt;/p&gt;
-&lt;/footer&gt;
+<footer>
+  <p>Email: u36186955@gmail.com | Phone: 03234407277</p>
+</footer>
 
-&lt;script&gt;
+<script>
   function toggleMenu() {
-    document.getElementById(&quot;navbar&quot;).classList.toggle(&quot;active&quot;);
+    document.getElementById("navbar").classList.toggle("active");
   }
-&lt;/script&gt;
+</script>
 
-&lt;/body&gt;
-&lt;/html&gt;</pre>
 </body>
 </html>
